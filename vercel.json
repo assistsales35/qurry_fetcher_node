@@ -1,0 +1,23 @@
+ {
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/run_query.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/query",
+      "dest": "api/run_query.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/",
+      "dest": "api/run_query.js"
+    }
+  ],
+  "env": {
+    "NODE_ENV": "production"
+  }
+}

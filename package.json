@@ -1,0 +1,24 @@
+{
+  "name": "qurry_fetcher_node",
+  "version": "1.0.0",
+  "description": "Secure PostgreSQL query API",
+  "main": "api/run_query.js",
+  "scripts": {
+    "dev": "NODE_ENV=development node api/run_query.js",
+    "start": "node api/run_query.js",
+    "test": "jest"
+  },
+  "engines": {
+    "node": ">=16.x"
+  },
+  "dependencies": {
+    "@vercel/node": "^5.3.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "pg": "^8.16.2",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
